@@ -1,0 +1,22 @@
+{
+  "name": "project-mocha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test-mocha": "mocha './lib/**/*.test.js'",
+    "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test",
+    "test": "nyc --reporter=html --reporter=text mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mocha": "^10.4.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "cross-env": "^7.0.3",
+    "nyc": "^15.1.0",
+    "sinon": "^18.0.0"
+  }
+}
